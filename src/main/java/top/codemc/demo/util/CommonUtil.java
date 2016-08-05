@@ -1,4 +1,4 @@
-package com.pingplusplus.demoapp.util;
+package top.codemc.demo.util;
 
 import com.vivavideo.mobile.xypayapi.XYPayService;
 import com.vivavideo.mobile.xypaycore.service.XYPayServiceImpl;

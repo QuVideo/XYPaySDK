@@ -1,8 +1,10 @@
-package com.pingplusplus.demoapp;
+package top.codemc.demo;
 
 import com.google.gson.Gson;
 
-import com.pingplusplus.demoapp.util.CommonUtil;
+import com.pingplusplus.demoapp.R;
+
+import top.codemc.demo.util.CommonUtil;
 import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;

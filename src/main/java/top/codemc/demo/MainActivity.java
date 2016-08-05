@@ -1,4 +1,6 @@
-package com.pingplusplus.demoapp;
+package top.codemc.demo;
+
+import com.pingplusplus.demoapp.R;
 
 import android.app.Activity;
 import android.content.Intent;
