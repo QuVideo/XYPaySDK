@@ -1,4 +1,4 @@
-Thanks for [pingpp-android](https://github.com/PingPlusPlus/pingpp-android)
+### Thanks for [pingpp-android](https://github.com/PingPlusPlus/pingpp-android)
 
 # VivaVideo Payments
 Make your payments more easy to use.
