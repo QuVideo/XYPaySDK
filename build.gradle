@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.pingplusplus.demoapp"
+        minSdkVersion 9
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+allprojects {
+    repositories {
+        mavenCentral()
+        //这里加入自己的maven地址
+        maven {
+            url "http://192.168.1.3:8081/nexus/content/repositories/VivaVideo/"
+        }
+    }
+}
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.vivavideo.mobile:xypayapi:1.1.1683'
+    compile 'com.vivavideo.mobile:xypaycore:1.1.168401@aar'
+//    compile 'com.vivavideo.mobile.pay:pingpp:1.1.1683@aar'
+//    compile project(':lib:pingpp_one')
+//    compile 'com.vivavideo.mobile.pay:pingpp_one:1.1.1683@aar'
+//    compile project(':lib:bdwallet_pay_sdk')
+//    compile 'com.vivavideo.mobile.pay:bdwallet_pay_sdk:1.1.1683@aar'
+//    compile project(':xypayapi')
+//    compile project(':xypaycore')
+}
